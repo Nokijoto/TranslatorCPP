@@ -109,8 +109,11 @@ int main()
 {
 	int option;
 	do{
-	cout<<"1 export. 2. import 0.wyjscie"<<endl;
-	cout<<"Wersja 0.2"<<endl;
+	cout<<"Translate Exchanger V.02"<<endl;	
+	cout<<"1 Export"<<endl;
+	cout<<"2.Import"<<endl;
+	cout<<"3.Instrukcja"<<endl;
+	cout<<"0.Wyjscie"<<endl;
 	cin>>option;
 	if(option==1)
 	{
@@ -128,9 +131,18 @@ int main()
 		import_sub(startsubs);
 		cout<<"Zakonczono import"<<endl;
 	}
+	else if(option==3
+	{
+		cout<<"Instrukcja"<<endl;
+		cout<<"Uwaga!!! Jesli masz wlaczone rozszezenia to anime_before i after  bedzie mialo .ass a pliki raw_sub, raw_time i translated bedzie mialo .txt"<<endl;
+		cout<<"Nazwij plik z tlumaczeniem anime_before"<<endl;
+		cout<<"Po uruchomieniu exportu, utworzy 2 pliki raw_sub i raw_time"<<endl;
+		cout<<"Nastepnie utworz plik translated i do niego przetlumaczone z raw_sub wpisz"<<endl;
+		cout<<"Po uruchomieniu importu utworzy sie plik anime_after"<<endl;
+	}
 	else
 	{
-		cout<<"Zla wartoœc. 1 export. 2. import 0.exit"<<endl;
+		cout<<"Zla wartosc. 1 export. 2. import 0.exit"<<endl;
 	}
 	}while(option!=0);
 	return 0;
